@@ -1,0 +1,12 @@
+<ion-content>
+	<div id="tilesContainer">
+	  <img *ngFor="let tile of tiles" src="../../assets/images/a{{ tile[0] }}.png" class="rotate{{ tile[1] }}">
+	  <div id="squares-container">
+	  	<div *ngFor="let square of squares; let i = index" class="squares" (click)="moveTo(square, i)"></div>
+	  </div>
+	  <img *ngFor="let white of whites; let i = index" src="../../assets/images/white.png" class="pieces" [style.right]="white[0] * a + '%'" [style.bottom]="white[1] * a + '%'" (click)="selectPiece('white', i)">
+	  <img *ngFor="let black of blacks; let i = index" src="../../assets/images/black.png" class="pieces" [style.right]="black[0] * a + '%'" [style.bottom]="black[1] * a + '%'" (click)="selectPiece('black', i)">
+  </div>
+  <br>
+  <h2><span>W: {{ whiteMoves }} </span><span> B: {{ blackMoves }}</span></h2>
+</ion-content>
