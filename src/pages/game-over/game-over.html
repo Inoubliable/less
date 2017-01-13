@@ -1,0 +1,16 @@
+<ion-content padding>
+
+	<div text-center id="winner-container">
+		<h1>{{ winner }} won!</h1>
+		<br>
+		<button ion-button large icon-right (click)="playAgain()">
+			PLAY AGAIN
+			<ion-icon name="repeat"></ion-icon>
+		</button>
+		<button ion-button large icon-right color="danger" (click)="exit()">
+			EXIT
+			<ion-icon name="exit"></ion-icon>
+		</button>
+	</div>
+
+</ion-content>

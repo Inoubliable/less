@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,iBAAkB;EACjB,SAAS,EAAE,KAAK",
+"sources": ["game-over.scss"],
+"names": [],
+"file": "game-over.css"
+}

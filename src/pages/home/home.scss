@@ -1,48 +1,6 @@
-#tilesContainer {
-	position: relative;
+#play-btn {
+	position: absolute;
+	top: 40%;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 96%;
-	max-width: 500px;
-	margin-top: 5%;
-	overflow: hidden;
-}
-
-img {
-	display: inline-block;
-	max-width: 33.3%;
-	float: left;
-	z-index: 3;
-}
-
-.rotate90 {
-    transform: rotate(90deg);
-}
-
-.rotate180 {
-    transform: rotate(180deg);
-}
-
-.rotate270 {
-    transform: rotate(270deg);
-}
-
-#squares-container {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-}
-
-.squares {
-	position: relative;
-	display: inline-block;
-	float: left;
-	width: 16.66%;
-	height: 16.66%;
-	z-index: 2;
-}
-
-.pieces {
-	position: absolute;
-	width: 16.66%;
 }
