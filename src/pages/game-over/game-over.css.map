@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,iBAAkB;EACjB,SAAS,EAAE,KAAK",
+"mappings": "AAAA,iBAAkB;EACjB,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,GAAG;EACR,SAAS,EAAE,KAAK",
 "sources": ["game-over.scss"],
 "names": [],
 "file": "game-over.css"

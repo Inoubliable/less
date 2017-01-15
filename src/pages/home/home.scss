@@ -1,6 +1,30 @@
+ion-header {
+	position: relative;
+	height: 20%;
+}
+
+ion-toolbar {
+	background-color: #fff;
+	height: 100%;
+}
+
+.toolbar-content {
+	height: 100%;
+}
+
+#btns-container {
+	position: relative;
+	top: 8%;
+}
+
+#less-logo {
+	height: 100%;
+}
+
 #play-btn {
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	transform: translateX(-50%);
+	margin-top: 7%;
+}
+
+#help-btn {
+	margin-top: 3%;
 }

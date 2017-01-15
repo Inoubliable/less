@@ -1,4 +1,4 @@
-#tilesContainer {
+#tiles-container {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -8,11 +8,10 @@
   margin-bottom: 2%;
   overflow: hidden; }
 
-img {
+.tiles {
   display: inline-block;
   max-width: 33.3%;
-  float: left;
-  z-index: 3; }
+  float: left; }
 
 .rotate90 {
   transform: rotate(90deg); }
@@ -34,17 +33,24 @@ img {
   float: left;
   width: 16.66%;
   height: 16.66%;
-  z-index: 2; }
+  z-index: 1; }
 
 .pieces {
   position: absolute;
-  width: 16.66%; }
+  width: 16.66%;
+  z-index: 2; }
 
-.playerTile {
+.player-tile {
   position: relative;
   text-align: center;
   max-width: 500px;
   margin: 1% auto;
-  font-size: 2em; }
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1.8em; }
+
+.active-tile {
+  background-color: #039BE5;
+  color: #fff; }
 
 /*# sourceMappingURL=play.css.map */

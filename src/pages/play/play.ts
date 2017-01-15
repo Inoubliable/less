@@ -102,7 +102,8 @@ export class PlayPage {
   	
   }
 
-  selectPiece(color: string, pieceNumber: number) {
+  selectPiece(event: Event, color: string, pieceNumber: number) {
+  	event.preventDefault();
   	if(color == 'white' && this.blackMoves == 0) {
   		this.selectedColor = color;
   	  	this.selectedIndex = pieceNumber;
@@ -112,7 +113,7 @@ export class PlayPage {
   	}
   }
 
-  moveTo(targetSquare: Array<number>, targetIndex: number) {
+  moveTo(targetIndex: number) {
 
   	if(this.selectedColor) {
 	  	var x = (35 - targetIndex) % 6;
@@ -283,6 +284,8 @@ export class PlayPage {
 
 			if(this.whiteMoves == 0) {
 				this.blackMoves = 3;
+				document.getElementById('white-tile').classList.remove('active-tile');
+				document.getElementById('black-tile').classList.add('active-tile');
 			}
   			
   		} else if(move && (add + 1) <= this.blackMoves) {
@@ -319,6 +322,8 @@ export class PlayPage {
 
 			if(this.blackMoves == 0) {
 				this.whiteMoves = 3;
+				document.getElementById('black-tile').classList.remove('active-tile');
+				document.getElementById('white-tile').classList.add('active-tile');
 			}
   			
   		}
@@ -332,7 +337,6 @@ export class PlayPage {
 		gameOverModal.onDidDismiss(() => {
 	    	this.gameNumber++;
 	    	if(this.gameNumber % 2 == 0) {
-	    		console.log('game numero 2');
 				this.whites = [[5,5],[5,4],[4,5],[4,4]];
 				this.blacks = [[0,0],[0,1],[1,0],[1,1]];
 				this.whiteMoves = 3;

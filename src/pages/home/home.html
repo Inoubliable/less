@@ -1,13 +1,20 @@
 <ion-content>
 
-	<ion-toolbar color="dark">
-		<ion-title>Less</ion-title>
-	</ion-toolbar>
+	<ion-header>
+		<ion-toolbar text-center>
+			<img src="assets/images/lesslogo.png" alt="less logo" id="less-logo">
+		</ion-toolbar>
+	</ion-header>
 
-	<div text-center>
+	<div id="btns-container" text-center>
 		<button ion-button large icon-right id="play-btn" (click)="play()">
 			PLAY
 			<ion-icon name="arrow-dropright-circle"></ion-icon>
+		</button>
+		<br>
+		<button ion-button large icon-right color="secondary" id="help-btn">
+			HELP
+			<ion-icon name="help"></ion-icon>
 		</button>
 	</div>
 
